@@ -38,7 +38,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    const handleMouseMove = (e) => setMousePos({ x: e.clientX, y: e.clientY });
+    const handleMouseMove = (e:any) => setMousePos({ x: e.clientX, y: e.clientY });
     
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('mousemove', handleMouseMove);
@@ -56,7 +56,7 @@ const Navbar = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const handleNavClick = (itemId, href) => {
+  const handleNavClick = (itemId:string, href:string) => {
     setActiveNav(itemId);
     setIsMenuOpen(false);
     if (href.startsWith('#')) {
