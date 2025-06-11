@@ -345,7 +345,7 @@ const Navbar = () => {
         </div>
 
         {/* Stats */}
-        <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-row gap-8 text-white z-20 px-4">
+        <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-row gap-8 text-white z-20 px-4 mt-10">
           {[
             { value: '20+', label: 'Années Innovation' },
             { value: '10K+', label: 'Sourires Parfaits' },
